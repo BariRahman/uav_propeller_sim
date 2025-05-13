@@ -1,0 +1,111 @@
+
+ =========================
+    XROTOR Version 7.69
+ =========================
+  
+ OPEN error on file  xrotor.def
+ Hard-wired defaults used
+
+   QUIT   Exit program
+  .AERO   Display or change airfoil characteristics
+   NAME s Set or change case name
+
+   ATMO r Set fluid properties from standard atmosphere
+   VSOU r Set/change fluid speed of sound
+   DENS r Set/change fluid density
+   VISC r Set/change fluid viscosity
+
+   NACE f Specify nacelle geometry file
+   DUCT r Duct/free-tip option toggle
+   VRAT r Change duct velocity ratio
+
+   ARBI   Input arbitrary rotor geometry
+  .DESI   Design rotor geometry
+  .MODI   Modify rotor geometry
+  .OPER   Calculate off-design operating points
+  .BEND   Calculate structural loads and deflections
+  .NOIS   Calculate and plot acoustic signature
+   JMAP   Calculate Cp vs J operating map
+
+   INTE   Interpolate geometry to specified radii
+   SAVE f Save rotor to restart file
+   SAVO f Save rotor to old style XROTOR restart file
+   LOAD f Read rotor from restart file
+   WDEF f Write current settings to  xrotor.def  file.
+
+   VPUT f Save  slipstream velocity profiles
+   VGET f Read  slipstream velocity profiles
+   VCLR   Clear slipstream velocity profiles
+
+   HARD   Hardcopy current plot
+   WIND   Windmill/propeller plotting mode toggle
+   PLOP   Plotting options
+   DISP   Display current design point
+
+ XROTOR   c>  
+Current value <ret takes default>:     0
+number of blades      i>  
+Current value <ret takes default>:  1.00000    
+flight speed (m/s)    r>  
+Current value <ret takes default>: 0.135632E-18
+tip radius (m)        r>  
+Current value <ret takes default>: 0.135632E-18
+hub radius (m)        r>  
+Current value <ret takes default>: *****
+number of radial stations   i>  
+ For each station input:   r/R   chord/R   angle(deg)
+ station  1   >  station  2   >  station  3   >  station  4   >  station  5   >  station  6   >  station  7   >  station  8   >  station  9   >  station 10   >  station 11   >  station 12   >  station 13   >  station 14   >  station 15   >  station 16   >  station 17   >  station 18   > 
+Any corrections? y/n>  
+ New rotor geometry created.
+
+
+ XROTOR   c>  
+.OPER   c>  
+Current value <ret takes default>:  422.454    
+rpm                  r>  
+ Iter     dGmax  @Imax    gGrms       Av        Aw         Be       RLX
+   1    0.153E+00    2   0.175E-02    0.0318    0.0987    11.574    0.2000
+   2    0.123E+00    2   0.134E-02    0.0318    0.1008    11.574    0.2000
+   3    0.975E-01    2   0.103E-02    0.0318    0.1025    11.574    0.2000
+   4    0.749E-01    2   0.795E-03    0.0318    0.1091    11.574    1.0000
+   5   -0.154E-01    2   0.124E-03    0.0318    0.1091    11.574    0.2000
+   6   -0.124E-01    2   0.997E-04    0.0318    0.1090    11.574    1.0000
+   7   -0.508E-03    2   0.315E-05    0.0318    0.1090    11.574    1.0000
+   8    0.277E-05   10   0.396E-07    0.0318    0.1090    11.574    0.2000
+
+ ===========================================================================
+ Free Tip Potential Formulation Solution:  Arbitrary blade                 
+                                                  Wake adv. ratio:    0.10899
+ no. blades :  2            radius(m)  :   0.1000     adv. ratio:     0.03183
+ thrust(N)  :  0.478        power(W)   :   2.03       torque(N-m):  0.646E-02
+ Efficiency :  0.2356       speed(m/s) :    1.000     rpm        :   3000.000
+ Eff induced:  0.2920       Eff ideal  :   0.3289     Area(m^2)  :    0.03134
+ Tnacel(N)  :     0.0000    Rhub(m)    :   0.0050     Rwake(m)   :    0.0050
+ Tvisc(N)   :    -0.0037    Pvisc(W)   :  0.380       Mach       :    0.0029
+ rho(kg/m3) :   1.22600     Vsound(m/s):  340.000     mu(kg/m-s) : 0.1780E-04
+ ---------------------------------------------------------------------------
+    J:    0.10000      adv:    0.03183       AF:   84.227
+   Ct:    0.09746       Cp:    0.04137  (by rho,Diam,N)
+   Tc:   24.81864       Pc:  105.35110  (by rho,Atip,Vel)
+   CT:    0.01257       CP:    0.00170  (by rho,Atip,Vtip)
+Sigma:    0.08205 CT/sigma:    0.15323  heliFOM:    0.58681
+
+  i  r/R   c/R  beta(deg)  CL     Cd    REx10^3 Mach   effi  effp  na.u/U  solidity
+  1 0.061 0.0890  39.10  1.510 s 0.1412   1.47  0.007  1.456 0.766   0.000  0.4632
+  3 0.140 0.1350  35.73  1.508 s 0.0960   4.06  0.013  0.743 0.812   0.000  0.3071
+  5 0.238 0.1703  45.24  1.526 s 0.1915   8.56  0.021  0.446 0.678   0.000  0.2273
+  7 0.337 0.1964  34.72  1.482   0.0501  14.05  0.031  0.264 0.903   0.000  0.1855
+  9 0.433 0.2012  27.92  1.279   0.0399  18.62  0.040  0.254 0.895   0.000  0.1480
+ 11 0.524 0.1912  23.64  1.131   0.0356  21.50  0.048  0.257 0.876   0.000  0.1161
+ 13 0.610 0.1715  20.56  1.043   0.0340  22.49  0.056  0.267 0.852   0.000  0.0895
+ 15 0.689 0.1485  18.27  0.988   0.0337  22.03  0.063  0.283 0.822   0.000  0.0686
+ 17 0.761 0.1253  16.52  0.953   0.0343  20.54  0.070  0.304 0.789   0.000  0.0524
+ 19 0.824 0.1039  15.22  0.931   0.0356  18.46  0.076  0.326 0.752   0.000  0.0401
+ 21 0.879 0.0875  14.16  0.889   0.0368  16.59  0.081  0.340 0.717   0.000  0.0317
+ 23 0.924 0.0719  13.37  0.850   0.0387  14.34  0.085  0.349 0.681   0.000  0.0248
+ 25 0.959 0.0574  12.50  0.793   0.0413  11.87  0.088  0.359 0.637   0.000  0.0190
+ 27 0.983 0.0482  11.96  0.656   0.0430  10.22  0.091  0.308 0.612   0.000  0.0156
+ 29 0.997 0.0428  11.67  0.396   0.0447   9.21  0.092  0.225 0.548   0.000  0.0137
+
+.OPER   c>  
+ XROTOR   c>  
